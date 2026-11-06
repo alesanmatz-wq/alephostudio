@@ -126,7 +126,7 @@
     "category": "exterior",
     "categoryLabel": "Retrato Exterior",
     "date": "26 de marzo de 2026",
-    "src": "galeria/foto26.jpg",
+    "src": "galeria/foto26.JPG",
     "archivo_origen": "IMG_XXXX.JPG",
     "description": "Retrato ambiental en luz natural vespertina.",
     "techNote": "Luz natural · Exterior"
@@ -137,7 +137,7 @@
     "category": "exterior",
     "categoryLabel": "Retrato Exterior",
     "date": "26 de marzo de 2026",
-    "src": "galeria/foto27.jpg",
+    "src": "galeria/foto27.JPG",
     "archivo_origen": "IMG_XXXX.JPG",
     "description": "Plano entero en entorno urbano con iluminación de contraluz suave.",
     "techNote": "Luz natural · Exterior"
@@ -159,7 +159,7 @@
     "category": "exterior",
     "categoryLabel": "Retrato Exterior",
     "date": "26 de marzo de 2026",
-    "src": "galeria/foto29.jpg",
+    "src": "galeria/foto29.JPG",
     "archivo_origen": "IMG_XXXX.JPG",
     "description": "Sesión temática en escalinata con luz directa y vestuario de personaje.",
     "techNote": "Luz natural · Exterior"
@@ -170,7 +170,7 @@
     "category": "exterior",
     "categoryLabel": "Retrato Exterior",
     "date": "26 de marzo de 2026",
-    "src": "galeria/foto30.jpg",
+    "src": "galeria/foto30.JPG",
     "archivo_origen": "IMG_XXXX.JPG",
     "description": "Retrato en plano medio corto con compresión óptica y fondo vegetal desenfocado.",
     "techNote": "Luz natural · Fondo difuminado"
@@ -181,7 +181,7 @@
     "category": "exterior",
     "categoryLabel": "Exterior",
     "date": "marzo 2026",
-    "src": "galeria/niña31.jpg",
+    "src": "galeria/niña31.JPG",
     "archivo_origen": "IMG_XXXX.JPG",
     "description": "Niña en escalinata",
     "techNote": "Luz natural"
