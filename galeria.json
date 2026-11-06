@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "title": "Penumbra y Claroscuro",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Octubre 2026",
+    "src": "galeria/foto1.jpg",
+    "archivo_origen": "chica8.png",
+    "description": "Estudio de expresión formal explorando la transición suave entre luces altas y sombras profundas.",
+    "techNote": "Beauty dish de 55cm frontal alto + bandera negra a la izquierda para absorber rebote residual."
+  },
+  {
+    "id": 2,
+    "title": "Juventud y Carácter",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Octubre 2026",
+    "src": "galeria/foto2.jpg",
+    "archivo_origen": "IMG_4825.JPG",
+    "description": "Estudio de expresión y pose formal. La cita de Rubén Darío como homenaje a la juventud.",
+    "techNote": "Luz principal suave a 45° con difusor octabox y reflector inferior para suavizar sombras en cuello."
+    },
+  {
+    "id": 3,
+    "title": "Serenidad en el Set",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Octubre 2026",
+    "src": "galeria/foto3.jpg",
+    "archivo_origen": "",
+    "description": "Retrato formal de estudio explorando la naturalidad en la pose y la contención en el gesto.",
+    "techNote": "Esquema cerrado con modificador frontal difuso y control estricto de rebote para modelar facciones."
+  },
+  {
+    "id": 4,
+    "title": "El amor todo lo vence",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Julio 2026",
+    "src": "galeria/foto4.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Una mirada, una sonrisa y estaremos juntos por siempre.",
+    "techNote": "Octabox de 120cm cenital y reflector blanco abajo para crear esquema tipo concha de ostra (clamshell)."
+  },
+  {
+    "id": 5,
+    "title": "Retrato en Clave Media",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Octubre 2026",
+    "src": "galeria/foto5.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Postura formal y dirección de mirada. El optimismo y la serenidad expresiva de la juventud.",
+    "techNote": "Esquema clásico a dos luces: principal difusa a 45° y luz de relleno tenue para conservar textura en sombras."
+  },
+  {
+    "id": 6,
+    "title": "Presencia y Soltura",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Octubre 2026",
+    "src": "galeria/foto6.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Retrato corporal en banco de estudio. Una postura relajada que proyecta seguridad y cercanía sin rigidez.",
+    "techNote": "Luz principal en tres cuartos modelando torso y extremidades; luz de recorte sutil para separar la silueta del fondo."
+  },
+  {
+    "id": 7,
+    "title": "Acorde y Concentración",
+    "category": "arte",
+    "categoryLabel": "Música & Arte",
+    "date": "2026",
+    "src": "galeria/guitarra.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Recital de guitarra clásica. Registro de la tensión expresiva de las manos sobre el diapasón y la resonancia de las cuerdas.",
+    "techNote": "Captura con luz escénica tenue; apertura amplia para aislar a la intérprete del fondo y velocidad precisa para congelar el rasgueo."
+  },
+  {
+    "id": 11,
+    "title": "Balcón Virreinal",
+    "category": "exterior",
+    "categoryLabel": "Exterior",
+    "date": "2026",
+    "src": "galeria/foto11.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Retrato ambiental en balcón del Centro Histórico de Querétaro. La cantera y la luz natural enmarcan la escena con rigor testimonial.",
+    "techNote": "Luz natural diurna rebotada en la fachada; exposición calibrada para preservar la textura de la cantera sin quemar el cielo."
+  },
+  {
+    "id": 12,
+    "title": "Snack & Empaque Comercial",
+    "category": "producto",
+    "categoryLabel": "Producto & Gastronomía",
+    "date": "Octubre 2026",
+    "src": "galeria/foto14.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Bodegón de producto sobre mesa de estudio. Control de texturas crujientes y saturación cromática de marca.",
+    "techNote": "Esquema cenital suave con luz principal difusa y rebote blanco lateral para rellenar sombras en el empaque."
+  },
+  {
+    "id": 13,
+    "title": "Snack & Empaque Comercial",
+    "category": "producto",
+    "categoryLabel": "Producto & Gastronomía",
+    "date": "Octubre 2026",
+    "src": "galeria/foto15.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Bodegón de producto sobre mesa de estudio. Control de texturas crujientes y saturación cromática de marca.",
+    "techNote": "Esquema cenital suave con luz principal difusa y rebote blanco lateral para rellenar sombras en el empaque."
+  },
+  {
+    "id": 14,
+    "title": "Snack & Empaque Comercial",
+    "category": "producto",
+    "categoryLabel": "Producto & Gastronomía",
+    "date": "Octubre 2026",
+    "src": "galeria/foto16.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Bodegón de producto sobre mesa de estudio. Control de texturas crujientes y saturación cromática de marca.",
+    "techNote": "Esquema cenital suave con luz principal difusa y rebote blanco lateral para rellenar sombras en el empaque."
+  },
+  {
+    "id": 26,
+    "title": "Retrato en Pareja en Exterior",
+    "category": "exterior",
+    "categoryLabel": "Retrato Exterior",
+    "date": "26 de marzo de 2026",
+    "src": "galeria/foto26.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Retrato ambiental en luz natural vespertina.",
+    "techNote": "Luz natural · Exterior"
+  },
+  {
+    "id": 27,
+    "title": "Retrato Ambiental Masculino",
+    "category": "exterior",
+    "categoryLabel": "Retrato Exterior",
+    "date": "26 de marzo de 2026",
+    "src": "galeria/foto27.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Plano entero en entorno urbano con iluminación de contraluz suave.",
+    "techNote": "Luz natural · Exterior"
+  },
+  {
+    "id": 28,
+    "title": "Retrato Femenino en Parque",
+    "category": "exterior",
+    "categoryLabel": "Retrato Exterior",
+    "date": "26 de marzo de 2026",
+    "src": "galeria/foto28.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Composición en plano entero aprovechando profundidad de campo en área verde.",
+    "techNote": "Luz natural · Exterior"
+  },
+  {
+    "id": 29,
+    "title": "Retrato Infantil Temático",
+    "category": "exterior",
+    "categoryLabel": "Retrato Exterior",
+    "date": "26 de marzo de 2026",
+    "src": "galeria/foto29.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Sesión temática en escalinata con luz directa y vestuario de personaje.",
+    "techNote": "Luz natural · Exterior"
+  },
+  {
+    "id": 30,
+    "title": "Plano Medio con Bokeh",
+    "category": "exterior",
+    "categoryLabel": "Retrato Exterior",
+    "date": "26 de marzo de 2026",
+    "src": "galeria/foto30.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Retrato en plano medio corto con compresión óptica y fondo vegetal desenfocado.",
+    "techNote": "Luz natural · Fondo difuminado"
+  },
+  {
+    "id": 31,
+    "title": "Chapulin",
+    "category": "exterior",
+    "categoryLabel": "Exterior",
+    "date": "marzo 2026",
+    "src": "galeria/niña31.jpg",
+    "archivo_origen": "IMG_XXXX.JPG",
+    "description": "Niña en escalinata",
+    "techNote": "Luz natural"
+  }
+]
