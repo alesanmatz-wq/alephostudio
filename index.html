@@ -206,6 +206,152 @@
   }
 }
 
+/* ESTILOS DEL LIGHTBOX ALEPHO STUDIO */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.lightbox-modal.activo {
+  display: flex;
+}
+
+.lightbox-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 11, 14, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.lightbox-container {
+  position: relative;
+  z-index: 10;
+  background: #181a1f;
+  border: 1px solid #282c34;
+  border-radius: 8px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  z-index: 20;
+  background: transparent;
+  border: none;
+  color: #c59b60;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.15);
+  color: #fff;
+}
+
+.lightbox-image-wrap {
+  flex: 1.4;
+  background: #111215;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.lightbox-image-wrap img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightbox-details {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  color: #e5e7eb;
+}
+
+.lightbox-tag {
+  align-self: flex-start;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  background: #21242b;
+  color: #c59b60;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.lightbox-details h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 0 0.4rem 0;
+  font-family: "Georgia", serif;
+}
+
+.lightbox-date {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 1.2rem;
+}
+
+.lightbox-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d1d5db;
+  margin-bottom: 1.5rem;
+}
+
+.lightbox-tech-box {
+  background: #111215;
+  border-left: 3px solid #c59b60;
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #9ca3af;
+  margin-top: auto;
+}
+
+.lightbox-tech-box strong {
+  display: block;
+  color: #e5e7eb;
+  margin-bottom: 0.2rem;
+}
+
+/* Adaptación para pantallas móviles */
+@media (max-width: 768px) {
+  .lightbox-container {
+    flex-direction: column;
+    max-height: 94vh;
+  }
+  .lightbox-image-wrap {
+    max-height: 50vh;
+  }
+  .lightbox-image-wrap img {
+    max-height: 48vh;
+  }
+  .lightbox-details {
+    padding: 1.2rem;
+  }
+}
+
   </style>
 </head>
 
@@ -1042,6 +1188,28 @@
     renderLogbook(logbookEntries);
 // Cierre de DOMContentLoaded
   </script>
+
+<!-- VISOR AMPLIADO (LIGHTBOX) -->
+<div id="lightboxModal" class="lightbox-modal" aria-hidden="true" role="dialog">
+  <div class="lightbox-overlay" id="lightboxOverlay"></div>
+  <div class="lightbox-container">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar visor">&times;</button>
+    <div class="lightbox-image-wrap">
+      <img id="lightboxImg" src="" alt="Fotografía ampliada">
+    </div>
+    <div class="lightbox-details">
+      <span class="lightbox-tag" id="lightboxCategory"></span>
+      <h3 id="lightboxTitle"></h3>
+      <p class="lightbox-date" id="lightboxDate"></p>
+      <p class="lightbox-desc" id="lightboxDesc"></p>
+      <div class="lightbox-tech-box">
+        <strong>Nota Técnica:</strong>
+        <span id="lightboxTech"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 
 </html>
