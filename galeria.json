@@ -1,5 +1,29 @@
 [
   {
+    "id": 33,
+    "title": "Retrato informal en entorno nocturno",
+    "category": "exterior",
+    "categoryLabel": "Exterior",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto33.jpg",
+    "archivo_origen": "estealex.jpg",
+    "sesion": "pepe",
+    "description": "Primer plano en perspectiva de autorretrato que muestra a dos sujetos adultos sobre una vía peatonal adoquinada, con puestos iluminados y transeúntes en segundo plano.",
+    "techNote": "Luz ambiental nocturna no modificada con fuentes prácticas en el fondo; iluminación frontal suave proveniente de la pantalla o alumbrado público cercano sin reflectores adicionales."
+  },
+  {
+    "id": 32,
+    "title": "Retrato festivo de jubilación",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto32.jpg",
+    "archivo_origen": "foto_test.jpg",
+    "sesion": "Prueba_Piloto",
+    "description": "Plano medio de una mujer en vestido azul cortando un pastel conmemorativo frente a una pared de ladrillo y cortina dorada. La composición testimonial captura un gesto espontáneo bajo una iluminación predominantemente diurna.",
+    "techNote": "Luz natural difusa proveniente de ventana lateral derecha a 45°, complementada con luz cenital ambiental de interior, sin modificadores de estudio visibles."
+  },
+  {
     "id": 1,
     "title": "Penumbra y Claroscuro",
     "category": "studio",
@@ -20,7 +44,7 @@
     "archivo_origen": "IMG_4825.JPG",
     "description": "Estudio de expresión y pose formal. La cita de Rubén Darío como homenaje a la juventud.",
     "techNote": "Luz principal suave a 45° con difusor octabox y reflector inferior para suavizar sombras en cuello."
-    },
+  },
   {
     "id": 3,
     "title": "Serenidad en el Set",
