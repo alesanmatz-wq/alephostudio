@@ -1114,101 +1114,112 @@
         });
       });
     }
+// =========================================================================
+    // LIGHTBOX / VISOR MODAL INTERACTIVO (CORREGIDO)
+    // =========================================================================
+    let currentLightboxIndex = 0;
 
-    // =========================================================================
-    // LIGHTBOX / VISOR MODAL INTERACTIVO
-    // =========================================================================
+    // Referencias seguras a los elementos del DOM
+    const modal = document.getElementById("lightboxModal");
+    const lbImg = document.getElementById("lightboxImg");
+    const lbTitle = document.getElementById("lightboxTitle");
+    const lbCategory = document.getElementById("lightboxCategory");
+    const lbDate = document.getElementById("lightboxDate");
+    const lbDesc = document.getElementById("lightboxDescription");
+    const lbTech = document.getElementById("lightboxTech");
+    const lbCounter = document.getElementById("lightboxCounter");
+    const lbWaShare = document.getElementById("lightboxWaShare");
 
     function openLightbox(index, list) {
-      currentFilteredList = list || galleryItems;
+      currentFilteredList = list && list.length ? list : galleryItems;
       currentLightboxIndex = index;
+      
       updateLightboxContent();
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-      document.body.style.overflow = "hidden"; // Evita scroll de fondo
+
+      if (modal) {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden"; // Evita scroll de fondo
+      }
     }
 
     function closeLightbox() {
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-      document.body.style.overflow = "auto";
+      if (modal) {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "auto";
+      }
     }
 
     function updateLightboxContent() {
       const item = currentFilteredList[currentLightboxIndex];
       if (!item) return;
 
-      lbImg.src = item.src || item.img;
-      lbTitle.textContent = item.title;
-      lbCategory.textContent = item.categoryLabel;
-      lbDate.textContent = item.date;
-      lbDesc.textContent = item.description;
-      lbTech.textContent = item.techNote;
-      lbCounter.textContent = `${currentLightboxIndex + 1} / ${currentFilteredList.length}`;
+      if (lbImg) lbImg.src = item.src || item.img || "";
+      if (lbTitle) lbTitle.textContent = item.title || "Fotografía de Autor";
+      if (lbCategory) lbCategory.textContent = item.categoryLabel || item.category || "";
+      if (lbDate) lbDate.textContent = item.date || "";
+      if (lbDesc) lbDesc.textContent = item.description || "";
+      if (lbTech) lbTech.textContent = item.techNote || "Esquema no especificado";
+      if (lbCounter) lbCounter.textContent = `${currentLightboxIndex + 1} / ${currentFilteredList.length}`;
 
-      const waMsg = encodeURIComponent(`Hola. Estuve viendo tu trabajo en la web de Alepho Studio y me gustaría consultar disponibilidad e información para una sesión de fotos.`);
-      lbWaShare.href = `https://wa.me/528781633813?text=${waMsg}`;
+      if (lbWaShare) {
+        const waMsg = encodeURIComponent(`Hola Alepho Studio. Me interesó la toma "${item.title}" y quisiera consultar disponibilidad para una sesión.`);
+        lbWaShare.href = `https://wa.me/528781633813?text=${waMsg}`;
+      }
     }
 
-    // Eventos Lightbox
-    document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+    // Botón de cierre
+    const closeBtn = document.getElementById("lightboxClose");
+    if (closeBtn) closeBtn.addEventListener("click", closeLightbox);
 
-    document.getElementById("lightboxPrev").addEventListener("click", (e) => {
-      e.stopPropagation();
-      currentLightboxIndex = (currentLightboxIndex - 1 + currentFilteredList.length) % currentFilteredList.length;
-      updateLightboxContent();
-    });
+    // Navegación Anterior
+    const prevBtn = document.getElementById("lightboxPrev");
+    if (prevBtn) {
+      prevBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (!currentFilteredList.length) return;
+        currentLightboxIndex = (currentLightboxIndex - 1 + currentFilteredList.length) % currentFilteredList.length;
+        updateLightboxContent();
+      });
+    }
 
-    document.getElementById("lightboxNext").addEventListener("click", (e) => {
-      e.stopPropagation();
-      currentLightboxIndex = (currentLightboxIndex + 1) % currentFilteredList.length;
-      updateLightboxContent();
-    });
+    // Navegación Siguiente
+    const nextBtn = document.getElementById("lightboxNext");
+    if (nextBtn) {
+      nextBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (!currentFilteredList.length) return;
+        currentLightboxIndex = (currentLightboxIndex + 1) % currentFilteredList.length;
+        updateLightboxContent();
+      });
+    }
 
-    document.getElementById("lightboxModal").addEventListener("click", (e) => {
-      if (e.target.id === "lightboxModal") closeLightbox();
-    });
+    // Cierre al dar clic fuera del recuadro
+    if (modal) {
+      modal.addEventListener("click", (e) => {
+        if (e.target.id === "lightboxModal") closeLightbox();
+      });
+    }
 
+    // Atajos de teclado: Escape, Flecha Izquierda, Flecha Derecha
     document.addEventListener("keydown", (e) => {
-      const modal = document.getElementById("lightboxModal");
       if (modal && !modal.classList.contains("hidden")) {
         if (e.key === "Escape") closeLightbox();
-        if (e.key === "ArrowLeft") {
+        if (e.key === "ArrowLeft" && currentFilteredList.length) {
           currentLightboxIndex = (currentLightboxIndex - 1 + currentFilteredList.length) % currentFilteredList.length;
           updateLightboxContent();
         }
-        if (e.key === "ArrowRight") {
+        if (e.key === "ArrowRight" && currentFilteredList.length) {
           currentLightboxIndex = (currentLightboxIndex + 1) % currentFilteredList.length;
           updateLightboxContent();
         }
       }
-    }); // Cierre correcto de keydown
-
+    });
     // LLAMADA DIRECTA: Se ejecuta inmediatamente al cargar la página
     renderLogbook(logbookEntries);
 // Cierre de DOMContentLoaded
   </script>
-
-<!-- VISOR AMPLIADO (LIGHTBOX) -->
-<div id="lightboxModal" class="lightbox-modal" aria-hidden="true" role="dialog">
-  <div class="lightbox-overlay" id="lightboxOverlay"></div>
-  <div class="lightbox-container">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar visor">&times;</button>
-    <div class="lightbox-image-wrap">
-      <img id="lightboxImg" src="" alt="Fotografía ampliada">
-    </div>
-    <div class="lightbox-details">
-      <span class="lightbox-tag" id="lightboxCategory"></span>
-      <h3 id="lightboxTitle"></h3>
-      <p class="lightbox-date" id="lightboxDate"></p>
-      <p class="lightbox-desc" id="lightboxDesc"></p>
-      <div class="lightbox-tech-box">
-        <strong>Nota Técnica:</strong>
-        <span id="lightboxTech"></span>
-      </div>
-    </div>
-  </div>
-</div>
 
 </body>
 
