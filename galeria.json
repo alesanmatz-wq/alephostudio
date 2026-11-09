@@ -1,5 +1,17 @@
 [
   {
+    "id": 34,
+    "title": "Retrato de celebración con pastel",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto34.jpg",
+    "archivo_origen": "Aide64_edición_v2.png",
+    "sesion": "aide",
+    "description": "Retrato en plano medio de una mujer sentada a la mesa sosteniendo una copa de vino y un pastel artesanal. La composición frontal y el fondo texturizado neutro generan una atmósfera íntima y sobria.",
+    "techNote": "Iluminación difusa frontal ligeramente elevada, con temperatura de color cálida, sombras suaves de relleno y control de destellos en elementos reflectantes como el cristal y la base metálica."
+  },
+  {
     "id": 33,
     "title": "Retrato informal en entorno nocturno",
     "category": "exterior",
@@ -10,6 +22,18 @@
     "sesion": "pepe",
     "description": "Primer plano en perspectiva de autorretrato que muestra a dos sujetos adultos sobre una vía peatonal adoquinada, con puestos iluminados y transeúntes en segundo plano.",
     "techNote": "Luz ambiental nocturna no modificada con fuentes prácticas en el fondo; iluminación frontal suave proveniente de la pantalla o alumbrado público cercano sin reflectores adicionales."
+  },
+  {
+    "id": 32,
+    "title": "Retrato festivo de jubilación",
+    "category": "studio",
+    "categoryLabel": "Estudio / Retrato",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto32.jpg",
+    "archivo_origen": "foto_test.jpg",
+    "sesion": "Prueba_Piloto",
+    "description": "Plano medio de una mujer en vestido azul cortando un pastel conmemorativo frente a una pared de ladrillo y cortina dorada. La composición testimonial captura un gesto espontáneo bajo una iluminación predominantemente diurna.",
+    "techNote": "Luz natural difusa proveniente de ventana lateral derecha a 45°, complementada con luz cenital ambiental de interior, sin modificadores de estudio visibles."
   },
   {
     "id": 1,
