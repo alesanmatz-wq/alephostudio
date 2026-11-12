@@ -1,28 +1,5 @@
 [
-  {
-    "id": 35,
-    "title": "Arturo y Lupita",
-    "category": "studio",
-    "categoryLabel": "Estudio / Retrato",
-    "date": "Noviembre 2026",
-    "src": "galeria/foto35.jpg",
-    "archivo_origen": "Art_Lup90.png",
-    "sesion": "arturo",
-    "description": "Disfrutando con sus hermanos de una hermosa velada para celebrar el cumple de Aidé",
-    "techNote": "Luz principal frontal directa con difusión compacta, combinada con luz de fondo cálida proveniente de una luminaria de pared fija como luz de acento ambiental."
-  },
-  {
-    "id": 34,
-    "title": "Retrato de celebración con pastel",
-    "category": "studio",
-    "categoryLabel": "Estudio / Retrato",
-    "date": "Noviembre 2026",
-    "src": "galeria/foto34.jpg",
-    "archivo_origen": "Aide64_edición_v2.png",
-    "sesion": "aide",
-    "description": "Retrato en plano medio de Aidé sentada a la mesa en compañía de sus seres queridos. Sostiene una copa de vino, antes de partir su pastel artesanal. La composición frontal y el fondo texturizado neutro generan una atmósfera íntima y sobria.",
-    "techNote": "Iluminación difusa frontal ligeramente elevada, con temperatura de color cálida, sombras suaves de relleno y control de destellos en elementos reflectantes como el cristal y la base metálica."
-  },
+
   {
     "id": 33,
     "title": "Retrato informal en entorno nocturno",
