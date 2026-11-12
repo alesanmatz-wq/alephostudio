@@ -1,5 +1,28 @@
 [
-
+  {
+    "id": 22,
+    "title": "Retrato de estudio en clave baja",
+    "category": "estudio",
+    "categoryLabel": "Estudio",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto22.jpg",
+    "archivo_origen": "foto22.jpg",
+    "sesion": "estudio",
+    "description": "Plano medio corto de mujer joven con vestido de terciopelo burdeos y brazos cruzados frente a un fondo negro puro, proyectando una expresión serena y directa a cámara[cite: 1].",
+    "techNote": "Esquema de estudio en clave baja con luz principal lateral-frontal suavizada (octabox) que modela el rostro y los hombros sin contaminar el fondo negro[cite: 1]."
+  },
+  {
+    "id": 36,
+    "title": "Retrato atmosférico con destello cálido",
+    "category": "estudio",
+    "categoryLabel": "Estudio",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto36.jpg",
+    "archivo_origen": "foto36.jpg",
+    "sesion": "estudio",
+    "description": "Retrato en plano medio corto con enfoque suave y un velo rojizo translúcido en primer plano que enmarca parcialmente el rostro y crea una atmósfera intimista[cite: 2].",
+    "techNote": "Iluminación de estudio cálida combinada con un filtro u objeto translúcido rojo cercano al objetivo para generar flare controlado y baja profundidad de campo[cite: 2]."
+  },
   {
     "id": 33,
     "title": "Retrato informal en entorno nocturno",
