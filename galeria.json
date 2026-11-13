@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": 37,
     "title": "Retrato femenino en entorno urbano",
     "category": "exterior",
@@ -10,8 +10,8 @@
     "sesion": "monse",
     "description": "Plano entero de Monserrat, sentada tranquilamente en la Alameda Zaragoza. La composición pretende integrar un entorno urbano dominado por tonos rojizos y verdes de los jardones circundantes",
     "techNote": "Luz natural diurna cenital tamizada por copa de árboles, sin modificadores artificiales ni reflectores de relleno evidentes; toma realizada con óptica estándar en ángulo frontal ligeramente picado."
-    },
-    {
+  },
+  {
     "id": 38,
     "title": "Retrato de cuerpo entero junto a fuente",
     "category": "exterior",
@@ -22,8 +22,8 @@
     "sesion": "montserrat",
     "description": "Retrato en plano entero de Monse, quien decidió descansar un rato en la Alameda, antes de entrar a su trabajo en un restaurante de los alrededores",
     "techNote": "Luz solar natural directa de mediodía compensada en exposición para mantener detalle en las texturas oscuras de la chaqueta y los tonos de piel frente al reflejo brillante del agua."
-    },
-    {
+  },
+  {
     "id": 39,
     "title": "Retrato medio en locación al aire libre",
     "category": "exterior",
@@ -34,8 +34,8 @@
     "sesion": "montserrat",
     "description": "Plano medio de Montserrat mirando directamente a cámara con expresión serena, recargando una mano sobre el barandal de piedra frente a un espejo de agua turquesa y vegetación densa en segundo plano",
     "techNote": "Iluminación ambiental natural a pleno sol con distancia focal media para comprimir el fondo del parque y mantener separación tonal entre el sujeto y el entorno."
-    },
-    {
+  },
+  {
     "id": 22,
     "title": "Retrato de estudio en clave baja",
     "category": "estudio",
@@ -46,8 +46,8 @@
     "sesion": "estudio",
     "description": "Plano medio corto de mujer joven con vestido de terciopelo burdeos y brazos cruzados frente a un fondo negro puro, proyectando una expresión serena y directa a cámara[cite: 1].",
     "techNote": "Esquema de estudio en clave baja con luz principal lateral-frontal suavizada (octabox) que modela el rostro y los hombros sin contaminar el fondo negro[cite: 1]."
-    },
-    {
+  },
+  {
     "id": 36,
     "title": "Retrato atmosférico con destello cálido",
     "category": "estudio",
