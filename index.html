@@ -721,7 +721,11 @@
             </span>
           </div>
         </div>
-
+<button type="button" onclick="document.getElementById('modalPrivacidad').classList.remove('hidden')"
+  class="inline-flex items-center gap-2 text-xs text-neutral-400 hover:text-amberAccent-400 underline underline-offset-4 transition-colors cursor-pointer">
+  <i class="fa-solid fa-shield-halved text-amberAccent-500/80"></i>
+  <span>Aviso de Privacidad y Uso de Datos</span>
+</button>
         <!-- Servicios -->
         <div class="lg:col-span-3">
           <h4
@@ -1223,7 +1227,46 @@
     renderLogbook(logbookEntries);
 // Cierre de DOMContentLoaded
   </script>
+<!-- Modal Aviso de Privacidad -->
+<div id="modalPrivacidad" onclick="if(event.target === this) this.classList.add('hidden')"
+  class="hidden fixed inset-0 z-50 bg-charcoal-950/90 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="bg-charcoal-900 border border-charcoal-700 max-w-lg w-full p-6 sm:p-8 rounded-sm shadow-2xl relative text-left">
+    
+    <!-- Botón cerrar (X) -->
+    <button type="button" onclick="document.getElementById('modalPrivacidad').classList.add('hidden')"
+      class="absolute top-4 right-4 text-neutral-400 hover:text-white p-2 transition-colors" aria-label="Cerrar">
+      <i class="fa-solid fa-xmark text-lg"></i>
+    </button>
 
+    <!-- Encabezado -->
+    <div class="flex items-center gap-2 mb-3">
+      <i class="fa-solid fa-shield-halved text-amberAccent-400 text-sm"></i>
+      <span class="text-[10px] uppercase tracking-[0.25em] text-amberAccent-400 font-semibold">Confidencialidad</span>
+    </div>
+    <h3 class="font-serif text-2xl text-white mb-4">Aviso de Privacidad</h3>
+
+    <!-- Cuerpo del aviso -->
+    <div class="space-y-3 text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
+      <p>
+        En <strong class="text-white font-medium">Alepho Studio</strong> (Saltillo, Coahuila) protegemos tus datos personales con estricta confidencialidad conforme a la legislación vigente en México.
+      </p>
+      <p>
+        <strong class="text-amberAccent-400 font-medium">1. Control de acceso y seguridad:</strong> Los datos de registro y la imagen de identificación oficial (INE) se solicitan únicamente para validar identidad, garantizar la seguridad de nuestras instalaciones privadas y coordinar tu cita. Puedes cubrir tu clave de elector o CURP antes de enviarla. Tus documentos no se comparten con terceros y se eliminan de nuestros registros al concluir tu sesión.
+      </p>
+      <p>
+        <strong class="text-amberAccent-400 font-medium">2. Privacidad de tus fotografías:</strong> Tu material fotográfico es de uso exclusivo para ti. Ninguna fotografía realizada en el estudio se publica en nuestro portafolio web ni en redes sociales sin tu autorización expresa y por escrito.
+      </p>
+    </div>
+
+    <!-- Botón de cierre inferior -->
+    <div class="mt-6 pt-4 border-t border-charcoal-800 flex justify-end">
+      <button type="button" onclick="document.getElementById('modalPrivacidad').classList.add('hidden')"
+        class="px-5 py-2.5 bg-amberAccent-500 hover:bg-amberAccent-400 text-charcoal-950 font-medium text-xs uppercase tracking-wider rounded-sm transition-colors">
+        Entendido
+      </button>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
