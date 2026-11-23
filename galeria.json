@@ -1,5 +1,41 @@
 [
   {
+    "id": 40,
+    "title": "Retrato urbano estilo ilustración al atardecer",
+    "category": "estilo",
+    "categoryLabel": "Siempre con tu estilo",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto40.jpg",
+    "archivo_origen": "IMG_3219-5.jpg",
+    "sesion": "somu",
+    "description": "Plano entero en exterior urbano junto a vehículo, con postproducción estética estilo ilustración gráfica y paleta cálida de atardecer.",
+    "techNote": "Toma en exterior a contraluz lateral con sombras largas naturales, integrada posteriormente con tratamiento digital estilo ilustración cel-shading y gradación cálida."
+  },
+    {
+    "id": 41,
+    "title": "Retrato urbano estilo urbano",
+    "category": "estilo",
+    "categoryLabel": "Siempre con tu estilo",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto41.jpg",
+    "archivo_origen": "IMG_3219-6.jpg",
+    "sesion": "somu",
+    "description": "Plano entero en exterior posando para enviarle la foto a sus amigos de su tierra natal, para que vean que se divierte.",
+    "techNote": "Toma en exterior a contraluz lateral con sombras largas naturales, sin ningún tipo de tratamiento, todo únicamente en lo que la cámara captó."
+  },
+    {
+    "id": 42,
+    "title": "Retrato urbano estilo urbano",
+    "category": "estilo",
+    "categoryLabel": "Siempre con tu estilo",
+    "date": "Noviembre 2026",
+    "src": "galeria/foto42.jpg",
+    "archivo_origen": "IMG_3219-1.jpg",
+    "sesion": "somu",
+    "description": "Plano entero en exterior urbano junto al poderoso, con ese carisma que solo da la juventud.",
+    "techNote": "Toma en exterior a contraluz en un atardecer que está hecho para recordar."
+  },
+  {
     "id": 37,
     "title": "Retrato femenino en entorno urbano",
     "category": "exterior",
