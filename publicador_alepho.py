@@ -87,15 +87,16 @@ def consultar_ia_vision(ruta_foto_optimizada: Path) -> dict:
       "techNote": "Nota técnica concisa deduciendo modificadores (softbox, beauty dish, stripbox, luz natural, luz dura), ángulo (45°, lateral, cenital) y reflectores o luces de recorte."
     }
 
-    Reglas estrictas de taxonomía:
-    1. Usa solo uno de los pares permitidos:
-       - "category": "studio"   -> "categoryLabel": "Estudio / Retrato"
-       - "category": "producto" -> "categoryLabel": "Producto & Gastronomía"
-       - "category": "arte"     -> "categoryLabel": "Música & Arte"
-       - "category": "exterior" -> "categoryLabel": "Exterior"
-    2. Cero adjetivos promocionales o de relleno.
+Reglas estrictas de taxonomía:
+1. Usa solo uno de los pares permitidos:
+  - "category": "studio"   -> "categoryLabel": "Estudio / Retrato"
+  - "category": "producto" -> "categoryLabel": "Producto & Gastronomía"
+  - "category": "arte"     -> "categoryLabel": "Música & Arte"
+  - "category": "exterior" -> "categoryLabel": "Exterior"
+  - "category": "estilo"   -> "categoryLabel": "Siempre con tu estilo"
+2. Criterio para "estilo" vs "exterior": usa "estilo" ("Siempre con tu estilo") para retrato urbano espontáneo, fotografía de calle (street photography) o personas captadas caminando/en movimiento en entornos urbanos cotidianos; reserva "exterior" para sesiones posadas o retratos planeados en parques, jardines o locaciones abiertas.
+3. Cero adjetivos promocionales o de relleno.
     """
-
     with open(ruta_foto_optimizada, "rb") as f:
         bytes_foto = f.read()
 
@@ -270,7 +271,7 @@ def procesar_publicacion(ruta_archivo_origen: str, sesion_gaveta: str = "General
             if nueva_cat_label:
                 registro['categoryLabel'] = nueva_cat_label
 
-            nueva_cat = input(f"Filtro Categoría (studio/exterior/arte/producto) [{registro['category']}]: ").strip()
+            nueva_cat = input(f"Filtro Categoría (studio/exterior/arte/producto/estilo) [{registro['category']}]: ").strip()
             if nueva_cat:
                 registro['category'] = nueva_cat
 
